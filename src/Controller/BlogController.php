@@ -17,15 +17,4 @@ class BlogController extends AbstractController
             'controller_name' => 'BlogController',
         ]);
     }
-
-    /**
-     * @Route("/articles/{slug}")
-     */
-    public function article($slug)
-    {
-        return new Response(sprintf(
-            'Future page to show the article "%s"!',
-            $slug
-        ));
-    }
 }
